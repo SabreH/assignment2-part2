@@ -1,7 +1,5 @@
 { 
     "climateData":{
-        "regions":[
-                {
                     "name": "arcticFiords",
                     "fallData":[
                         {
@@ -417,7 +415,5 @@
                             "temp": 6.0
                         }
                     ]
-                }
-        ]
     }
 }
