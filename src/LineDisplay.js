@@ -9,41 +9,35 @@ export default class LineDisplay {
         this.holder = lnHolder;
         this.temp = graphData;
         this.lineFun = d3.line()
-            .x(d => (d.year-1970)*30)
-            .y(d => (this.h/2) - (d.temp*108))
+            .x(d => (d.year-1970)*31.3)
+            .y(d => (this.h/2) - (d.temp*54))
             .curve(d3.curveMonotoneX)
         this.buildLineChart();
     }
 
     buildLineChart() {
         let svg = d3.select(this.holder)
-            .attr("width", this.w +300)
-            .attr("height", this.h)
+            .attr("width", this.w +400)
+            .attr("height", this.h/2 +70)
         let viz = svg.append("path")
             .attr("d", this.lineFun(this.temp.data))
             .attr("stroke-width","3")
             .attr("stroke","hotpink")
             .attr("fill", "none")
-            .attr('transform', 'translate(60, 50)');
+            .attr('transform', 'translate(60, -150)');
         let labels = svg.selectAll("text")
             .data(this.temp.data)
             .enter()
             .append("text")
-            .attr('transform', 'translate(60, 50)')
+            .attr('transform', 'translate(60, -150)')
             .text(d => d.temp)
-            .attr("x",d => (d.year -1970)  *30 +10)
-            .attr("y",d => (this.h/2 - d.temp * 108)-10)
+            .attr("x",d => (d.year -1970)  *31.3 +10)
+            .attr("y",d => (this.h/2 - d.temp * 54)-20)
             .attr("font-size", "17px")
             .attr("font-family", "sans-serif")
             .attr("text-anchor", "start")
             .attr("dy", "0.35em")
-            .attr("font-weight",(d, i) => {
-                if (i === 0 || i === (this.temp.data.length - 1)) {
-                    return "bold";
-                } else {
-                    return "normal";
-                }
-            })
+            .attr("font-weight","bold")
             .attr("fill",d => {
                 if (d.temp > 0) {
                     //return positive colour
@@ -64,12 +58,12 @@ export default class LineDisplay {
         */
         let xScale = d3.scaleBand()
             .domain(yearData)
-            .range([0,1200])
+            .range([0,1400])
             .paddingInner(0.05);
 
         let yScale = d3.scaleLinear()
             .domain(d3.extent(tempData))
-            .range([this.h,0])
+            .range([this.h/2 + 50,0])
 
         //create the x axis at the bottom and y axis on left side
         let xAxis = d3
@@ -83,21 +77,17 @@ export default class LineDisplay {
         //define the max data for year value
         let maxVal = d3.max(yearData);
 
-        //append the group of nums and insert x axis
-        svg.append('g')
-            .attr('class','xScale')
-            .attr('transform', 'translate(50, ' + yScale(minVal) +")")
-            .call(xAxis);
         //add the prescription for xscale
         svg.append("g")
             .attr('class','xScale')
-            .attr('transform', 'translate(50, ' + yScale(minVal)+")")
+            .attr('transform', 'translate(20, ' + yScale(minVal)+")")
             //call the x axis
             .call(xAxis)
+            .style("font-size","13px")
             //add the prescription for xscale
             .append("text")
-                .attr('transform', 'translate(600,45)')
-                .attr("font-size", "18px")
+                .attr('transform', 'translate(700,50)')
+                .attr("font-size", "20px")
                 .style("text-anchor", "end")
                 .style("fill", "#454545")
                 .text("Year");
@@ -105,13 +95,13 @@ export default class LineDisplay {
         // append the group of nums and insert y axis
         svg.append('g')
             .attr('class','ylabel')
-            .attr('transform', 'translate(50, 0)')
+            .attr('transform', 'translate(20, 0)')
             .call(yAxis)
             //add the prescription for yscale
             .append("text")
-                .attr("transform", "rotate(-90), translate(-500,-40)")
-                .attr("font-size", "18px")
-                .style("text-anchor", "start")
+                .attr("transform", "rotate(-90), translate(-200,-40)")
+                .attr("font-size", "20px")
+                .style("text-anchor", "end")
                 .style("fill", "#454545")
                 .text("Temperature (ºC)");
 
@@ -150,4 +140,4 @@ export default class LineDisplay {
         
     }
     //END buildLineChart :)
-};
+}
