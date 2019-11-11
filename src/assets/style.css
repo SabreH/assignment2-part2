@@ -5,7 +5,7 @@
     padding: 0;
 }
 body{
-    background-color: peachpuff;;
+    background-color: #fff;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
@@ -37,6 +37,24 @@ h2,p{
     text-align: left;
     
 }
+
+button {
+    width: 120px;
+    height: 50px;
+    background-color: #01c9a1;
+    color: #fff;
+    font-size: 20px;
+    font-family: arial,sans-serif;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: 0px;
+}
+
+button:active {
+    background-color:hsl(303, 100%, 56%);
+    color: #fff;
+}
+
 svg{
     margin: 0 auto;
     width: auto;
