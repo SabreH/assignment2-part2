@@ -282,43 +282,140 @@
                         “temp”: -3.7
                         },
                         {
-                        “year”: 1984,
-                        “precip”:5,
-                        “temp”: -3.8
+                        "year": 1984,
+                        "precip":5,
+                        "temp": -3.8
                         },
                         {
-                        “year”: 1985,
-                        “precip”:-17,
-                        “temp”: 0.4
+                        "year": 1985,
+                        "precip":-17,
+                        "temp": 0.4
                         },
                         {
-                        “year”: 1986,
-                        “precip”:46,
-                        “temp”: 3.5
+                        "year": 1986,
+                        "precip":46,
+                        "temp": 3.5
                         },
                         {
-                        “year”: 1987,
-                        “precip”:-3,
-                        “temp”: -2.0
+                        "year": 1987,
+                        "precip":-3,
+                        "temp": -2.0
                         },
                         {
-                        “year”: 1988,
-                        “precip”:21,
-                        “temp”: 0.8
+                        "year": 1988,
+                        "precip":21,
+                        "temp": 0.8
                         },
                         {
-                        “year”: 1989,
-                        “precip”:-17,
-                        “temp”: -2.6
+                        "year": 1989,
+                        "precip":-17,
+                        "temp": -2.6
                         },
                         {
-                        “year”: 1990,
-                        “precip”:-32,
-                        “temp”: -1.8
+                        "year": 1990,
+                        "precip":-32,
+                        "temp": -1.8
                         },
-
-
-
+                        {
+                            "year":1991,
+                            "precip":-12,
+                            "temp": -0.21
+                        },
+                        {
+                            "year":1992,
+                            "precip":18,
+                            "temp": -2.0
+                        },
+                        {
+                            "year":1993,
+                            "precip":-1,
+                            "temp": -1.6
+                        },
+                        {
+                            "year":1994,
+                            "precip":-3,
+                            "temp": 3.5
+                        },
+                        {
+                            "year":1995,
+                            "precip":-1,
+                            "temp": -0.6
+                        },
+                        {
+                            "year":1996,
+                            "precip":-6,
+                            "temp": 0.6
+                        },
+                        {
+                            "year":1997,
+                            "precip":28,
+                            "temp": 0.8
+                        },
+                        {
+                            "year":1998,
+                            "precip":-7,
+                            "temp": -0.5
+                        },
+                        {
+                            "year":1999,
+                            "precip":20,
+                            "temp": 1.0
+                        },
+                        {
+                            "year":2000,
+                            "precip":-7,
+                            "temp": -0.8
+                        },
+                        {
+                            "year":2001,
+                            "precip":28,
+                            "temp": 0.7
+                        },
+                        {
+                            "year":2002,
+                            "precip":27,
+                            "temp": 0.5
+                        },
+                        {
+                            "year":2003,
+                            "precip":52,
+                            "temp": 2.9
+                        },
+                        {
+                            "year":2004,
+                            "precip":35,
+                            "temp": 1.8
+                        },
+                        {
+                            "year":2005,
+                            "precip":11,
+                            "temp": -0.1
+                        },
+                        {
+                            "year":2006,
+                            "precip":60,
+                            "temp": 1.8
+                        },
+                        {
+                            "year":2007,
+                            "precip":26,
+                            "temp": 3.1
+                        },
+                        {
+                            "year":2008,
+                            "precip":71,
+                            "temp": 0.0
+                        },
+                        {
+                            "year":2009,
+                            "precip":10,
+                            "temp": 1.6
+                        },
+                        {
+                            "year":2010,
+                            "precip":27,
+                            "temp": 6.0
+                        }
                     ]
                 }
         ]
