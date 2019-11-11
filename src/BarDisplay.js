@@ -77,7 +77,7 @@ export default class BarDisplay {
             .attr("fill",d => {
                 if (d.precip > 0) {
                     //change it to a brighter colours - pinks
-                    return `rgb(${Math.abs(d.precip)*255},77,190)`;
+                    return `#CE3883`;
                     
                 } else {
                     //if its less than 0 change the colour to darker colours - orange/fall
@@ -112,7 +112,7 @@ export default class BarDisplay {
                     }
                 })
                 //change the fill of the labels
-                .attr("fill", "#454545")
+                .attr("fill", "#000")
                 //change the font size
                 .attr("font-size", "17px");
     
@@ -129,7 +129,7 @@ export default class BarDisplay {
         .call(xAxis)
         //add the prescription for xscale
         .append("text")
-            .attr('transform', 'translate('+ (xScale(maxVal)+80)+ ',15)')
+            .attr('transform', 'translate(600,40)')
             .attr("font-size", "18px")
             .style("text-anchor", "end")
             .style("fill", "#454545")
@@ -143,7 +143,7 @@ export default class BarDisplay {
         .call(yAxis)
         //add the prescription for yscale
         .append("text")
-            .attr("transform", "rotate(-90), translate(-120,-40)")
+            .attr("transform", "rotate(-90), translate(-500,-40)")
             .attr("font-size", "18px")
             .style("text-anchor", "start")
             .style("fill", "#454545")
