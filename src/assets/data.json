@@ -213,58 +213,58 @@
                     "winterData":[
                         {
                             "year":1970,
-                            "precip”:22,
-                            "temp”:0.7
+                            "precip":22,
+                            "temp":0.7
                         },
                         {
                             "year":1971,
-                            "precip”:7,
-                            "temp”:-1.0
+                            "precip":7,
+                            "temp":-1.0
                         },
                         {
                             "year":1972,
-                            "precip”:-40,
-                            "temp”:-4.2
+                            "precip":-40,
+                            "temp":-4.2
                         },
                         {
                             "year":1973,
-                            "precip”:-29,
-                            "temp”:-3.1
+                            "precip":-29,
+                            "temp":-3.1
                         },
                         {
                             "year":1974,
-                            "precip”:-35,
-                            "temp”:-0.5
+                            "precip":-35,
+                            "temp":-0.5
                         },
                         {
                             "year":1975,
-                            "precip”:-33,
-                            "temp”:-2.3
+                            "precip":-33,
+                            "temp":-2.3
                         },
                         {
                             "year":1976,
-                            "precip”:-6,
-                            "temp”:-0.3
+                            "precip":-6,
+                            "temp":-0.3
                         },
                         {
                             "year":1977,
-                            "precip”:31,
-                            "temp”:3.0
+                            "precip":31,
+                            "temp":3.0
                         },
                         {
                             "year":1978,
-                            "precip”:-7,
-                            "temp”:0.4
+                            "precip":-7,
+                            "temp":0.4
                         },
                         {
                             "year":1979,
-                            "precip”:15,
-                            "temp”:0.5
+                            "precip":15,
+                            "temp":0.5
                         },
                         {
                             "year":1980,
-                            "precip”:20,
-                            "temp”:2.1
+                            "precip":20,
+                            "temp":2.1
                         },
 
                     ]
