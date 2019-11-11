@@ -1,0 +1,49 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: peachpuff;;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: auto;
+    
+}
+header{
+    background-color: pink;
+    padding: 50px 0;
+}
+
+h1{
+    font-size: 2em;
+    color: #AA003F;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color: #454545;
+}
+h2{
+    padding: 40px 0;
+}
+h2,p{
+    color: #454545;
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: left;
+    
+}
+svg{
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    padding: 50px;
+    /* box-shadow: 5px 5px hotpink; */
+    border: 1px solid #454545;
+    /* margin-bottom: 20px; */
+}
