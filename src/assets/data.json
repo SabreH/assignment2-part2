@@ -266,6 +266,58 @@
                             "precip":20,
                             "temp":2.1
                         },
+                        {
+                        “year”: 1981,
+                        “precip”:16,
+                        “temp”: 1.7
+                        },
+                        {
+                        “year”: 1982,
+                        “precip”:25,
+                        “temp”: 2.6
+                        },
+                        {
+                        “year”: 1983,
+                        “precip”:-8,
+                        “temp”: -3.7
+                        },
+                        {
+                        “year”: 1984,
+                        “precip”:5,
+                        “temp”: -3.8
+                        },
+                        {
+                        “year”: 1985,
+                        “precip”:-17,
+                        “temp”: 0.4
+                        },
+                        {
+                        “year”: 1986,
+                        “precip”:46,
+                        “temp”: 3.5
+                        },
+                        {
+                        “year”: 1987,
+                        “precip”:-3,
+                        “temp”: -2.0
+                        },
+                        {
+                        “year”: 1988,
+                        “precip”:21,
+                        “temp”: 0.8
+                        },
+                        {
+                        “year”: 1989,
+                        “precip”:-17,
+                        “temp”: -2.6
+                        },
+                        {
+                        “year”: 1990,
+                        “precip”:-32,
+                        “temp”: -1.8
+                        },
+
+
 
                     ]
                 }
