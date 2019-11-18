@@ -13,46 +13,50 @@ body{
     
 }
 header{
-    background-color: pink;
+    background-color: #E5E5E5;
     padding: 50px 0;
 }
 
 h1{
     font-size: 2em;
-    color: #AA003F;
+    color: #0A8379;
     text-align: center;
 }
 h3{
     text-align: center;
-    color: #454545;
+    color: #C35300;
+    font-size: 25px;
 }
 h2{
     padding: 40px 0;
+
 }
 h2,p{
     color: #454545;
     width: 1200px;
     height: 30px;
-    margin: 0 auto;
+    text-align: center;
     text-align: left;
     
 }
 
 button {
-    width: 120px;
+    width: 200px;
     height: 50px;
-    background-color: #01c9a1;
+    background-color: #0A8379;
     color: #fff;
     font-size: 20px;
     font-family: arial,sans-serif;
-    margin-top: 15px;
-    border-radius: 12px;
+    margin-top: 20px;
+    border-radius: 100px;
     border: 0px;
+    border-bottom: 7px solid black;
 }
 
 button:active {
-    background-color:hsl(303, 100%, 56%);
+    background-color:#C35300;
     color: #fff;
+    border-bottom: 2px solid black;
 }
 
 svg{
@@ -60,8 +64,21 @@ svg{
     width: auto;
     height: auto;
     overflow: visible;
-    padding: 50px;
-    /* box-shadow: 5px 5px hotpink; */
-    border: 1px solid #454545;
+    padding: 100px;
+    box-shadow: 5px 2px 0 #0A8379; 
+    border: 10px solid #E5E5E5;
+    margin-bottom: 70px;
     /* margin-bottom: 20px; */
+}
+
+.firstGraphTittle{
+    margin-left: 740px;
+    font-size: 22px;
+    padding-bottom: 25px;
+}
+
+.secondGraphTittle{
+    margin-left: 740px;
+    font-size: 22px;
+    padding-bottom: 25px;
 }
