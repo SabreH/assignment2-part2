@@ -16,17 +16,26 @@ export default class LineDisplay {
     }
 
     buildLineChart() {
+        let data = this.temp;
+        console.log(data);
+        
+        let seasonsName = 0;
+        seasonsName = parseInt(0);
+        console.log(seasonsName);
+    
+        let dataset = data.seasons[seasonsName].seasonData;
+
         let svg = d3.select(this.holder)
             .attr("width", this.w +400)
             .attr("height", this.h/2 +70)
         let viz = svg.append("path")
-            .attr("d", this.lineFun(this.temp.data))
-            .attr("stroke-width","3")
-            .attr("stroke","hotpink")
+            .attr("d", this.lineFun(dataset))
+            .attr("stroke-width","1")
+            .attr("stroke","black")
             .attr("fill", "none")
             .attr('transform', 'translate(60, -150)');
         let labels = svg.selectAll("text")
-            .data(this.temp.data)
+            .data(dataset)
             .enter()
             .append("text")
             .attr('transform', 'translate(60, -150)')
@@ -41,16 +50,16 @@ export default class LineDisplay {
             .attr("fill",d => {
                 if (d.temp > 0) {
                     //return positive colour
-                    return `blue`;
+                    return `#C35300`;
                 } else {
                     //return negative colour
-                    return `red`;
+                    return `#0A8379`;
                 }
             });
             
         //get the value of temp and year
-        let tempData = this.temp.data.map(d=>d.temp);
-        let yearData = this.temp.data.map(d=>d.year);
+        let tempData = dataset.map(d=>d.temp);
+        let yearData = dataset.map(d=>d.year);
         /*
         add the scale to the x axis and y axis
         the range : the width and height of the graphData
@@ -87,9 +96,10 @@ export default class LineDisplay {
             //add the prescription for xscale
             .append("text")
                 .attr('transform', 'translate(700,50)')
-                .attr("font-size", "20px")
+                .attr("font-size", "23px")
                 .style("text-anchor", "end")
-                .style("fill", "#454545")
+                .style("fill", "#0A8379")
+                .attr("font-weight","600")
                 .text("Year");
             
         // append the group of nums and insert y axis
@@ -100,9 +110,10 @@ export default class LineDisplay {
             //add the prescription for yscale
             .append("text")
                 .attr("transform", "rotate(-90), translate(-200,-40)")
-                .attr("font-size", "20px")
+                .attr("font-size", "23px")
                 .style("text-anchor", "end")
-                .style("fill", "#454545")
+                .style("fill", "#0A8379")
+                .attr("font-weight","600")
                 .text("Temperature (ºC)");
 
         //add legend for precipitation
@@ -110,32 +121,32 @@ export default class LineDisplay {
         svg.append("rect")
             .attr("x",100)
             .attr("y", 5)
-            .attr("width", 250)
-            .attr("height", 80)
-            .attr("fill","#cdcdcd")
+            .attr("width", 300)
+            .attr("height", 85)
+            .attr("fill","#E5E5E5")
         //2 small circles
         svg.append("circle")
             .attr("cx",125)
             .attr("cy",30)
             .attr("r", 6)
-            .style("fill", "#0000ff")
+            .style("fill", "#C35300")
         svg.append("circle")
             .attr("cx",125)
             .attr("cy",60)
             .attr("r", 6)
-            .style("fill", "#ff0000")
+            .style("fill", "#0A8379")
         //text display
         svg.append("text")
             .attr("x", 150)
-            .attr("y", 30)
+            .attr("y", 35)
             .text("Positive Temperature (ºC)")
-            .style("font-size", "15px")
+            .style("font-size", "20px")
             .attr("alignment-baseline","middle")
         svg.append("text")
             .attr("x", 150)
-            .attr("y", 60)
+            .attr("y", 70)
             .text("Negative Temperature (ºC)")
-            .style("font-size", "15px")
+            .style("font-size", "20px")
             .attr("alignment-baseline","middle")
         
     }
