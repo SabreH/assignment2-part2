@@ -41,7 +41,8 @@ function startChart(){
 fetch('data.json')
     .then(data => data.json())
     .then(data => {
-        graphData = data;
-        // console.log(graphData);
+        graphData = data.climateData;
+        console.log(graphData)
         startChart();
+
 });
